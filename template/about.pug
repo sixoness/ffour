@@ -1,0 +1,66 @@
+extends layout
+
+block content
+	include lib/header
+	.layout.bg
+		.container
+			ul.bread.clearfix
+				li
+					| 您所在的位置：
+					a(href='/') 首页
+					span  >
+					span.txt-black 关于我们
+		.container.bg-white.main
+			aside
+				dd#aboutUs
+					a#companyInfo.active(href='javasript:;') 公司简介
+					a#mangerTeam(href='javasript:;') 管理团队
+					a#companyPartner(href='javasript:;') 股东介绍
+					a#companyEvent(href='javasript:;') 大事记要
+					a#companyHonor(href='javasript:;') 荣誉一览
+					a#companyNews(href='javasript:;') 公司动态
+					a#zixun(href='javasript:;') 行业资讯
+					a#mediaList(href='javasript:;') 媒体报道
+
+					a#ourTeam(href='javasript:;') 团队风采
+					a#mediaList(href='javasript:;') 网站公告
+					a#question(href='javasript:;') 常见问题
+					a#feiyong(href='javasript:;') 规则资费
+					a#webSecurity(href='javasript:;') 安全保障
+					a#joinUs(href='javasript:;') 招贤纳士
+					a#linkUs(href='javasript:;') 联系我们
+				br
+				div(align='center')
+					img(src='/th/images/mobilecode.jpg')
+				br
+			main
+				.txt-title
+					span 公司简介
+				.txt-news
+					p
+						| 招商贷（www.zhaoshangdai.com），系中天城投集团股份有限公司旗下核心互联网金融平台。中天城投集团为深圳证券交易所上市企业（股票代码：SZ.000540），总市值逾600亿元人民币，是融地产、能源、金融、文化、健康等业务为一体的整合、紧密、多元的综合集团。
+					p
+						| 招商贷自2013年6月成立以来，截止2016年1月，累计撮合资金已超过70亿，位居全国前列，在中国西部首屈一指。我们撮合的资金主要用于支持贵州中小企业等实体经济发展，已实现间接创造经济产值超300亿，安置就业人数超过2万人，产生了积极的社会效应。
+					p
+						| 2015年6月，博实火炬基金入股招商贷。这标志着招商贷成为中国第一家既有上市企业控股背景、又有政府引导基金参与的混合所有制互联网金融企业。未来，招商贷将面向互联网金融线上、线下两端，积极探索更为丰富的业务形态及产品模式，构建以互联网金融为中心的完整生态圈与闭环产业链，进一步巩固中国西部互联网金融第一品牌的地位！
+					p
+					h1.h1 平台理念
+					| 合作经营、坚如磐石
+					p
+					p
+					h1.h1 平台使命
+					| 招商引资，服务实体经济
+					br
+					| 普惠金融，助力贵州发展
+					p
+					p
+					h1.h1 团队价值观
+					| 团结、务实、创新、勤奋
+					p
+		br
+block script
+	script.
+		$(function () {
+			var addCss = "companyInfo";
+			$('#' + addCss).addClass("active");
+		});
